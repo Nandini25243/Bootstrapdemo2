@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Hello, world!</title>
+  </head> 
+  <style>
+
+      *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow:hidden;
+
+} 
+.sidebar{ 
+    position: fixed;
+    height: 100%;
+    width: 240px;
+    background: rgb(16, 7, 39);
+    top:0;
+    left: 0;
+    padding: 4px 10px;
+
+} 
+.sidebar #btn{ 
+    position: absolute;
+    color: cornsilk;
+    left: 90%;
+    top:6px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform:translateX(-50%);
+} 
+.sidebar ul{
+    margin-top:20px;
+
+} 
+.sidebar ul li{
+    position: relative;
+    height:50px;
+    width: 100%;
+    margin:0 5px;
+    list-style: none;
+    line-height:50px;
+    border-radius: 12px;
+}  
+.sidebar ul li.tooltip{
+    position: absolute;
+    left: 122px;
+    top: 50%; 
+    border-radius: 6px;
+    transform: translateY(-50%);
+    height: 35px;
+    width: 122px; 
+    background: #fff;
+    box-shadow: 0 5px 10x rgba(0,0, 0, 0.2); 
+    line-height: 35px; 
+    text-align: center;
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+}  
+.sidebar ul li:hover .tooltip{
+
+}
+.sidebar ul li a{
+    color:cornsilk;
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+} 
+.sidebar ul li a:hover{
+    color:rgb(24, 26, 26);
+    background: #fff;
+}
+.sidebar ul li a i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+} 
+  </style>
+  <body>
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <div class="logo_name">Jist App</div> 
+                </div> 
+            <i class='bx bx-menu' id="btn"></i>
+        </div> 
+        <ul class="nav-list">
+            <li>
+                <a href="#" >
+                    <i class='bx bxs-home'></i>
+                    <span class="links_name">Home</span>
+                </a> 
+                <span class="tooltip">Dashboard</span>
+                        </li>
+                        <li>
+                            <a href="#" >
+                                <i class='bx bxs-user'></i>
+                                <span class="links_name">Users</span>
+                            </a> 
+                            <span class="tooltip">Dashboard</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" >
+                                            <i class='bx bx-line-chart'></i>
+                                            <span class="links_name">Retailer</span>
+                                        </a>
+                                        <span class="tooltip">Dashboard</span>
+                                                </li>
+                                                <li>
+                                                    <a href="#" >
+                                                        <i class='bx bx-buoy'></i>
+                                                        <span class="links_name">Campaign</span>
+                                                    </a> 
+                                                    <span class="tooltip">Dashboard</span>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" >
+                                                                    <i class='bx bx-buoy'></i>
+                                                                    <span class="links_name">License</span>
+                                                                </a> 
+                                                                <span class="tooltip">Dashboard</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" >
+                                                                                <i class='bx bxs-user-plus'></i>
+                                                                                <span class="links_name">Roles</span>
+                                                                            </a>
+                                                                            <span class="tooltip">Dashboard</span>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" >
+                                                                                            <i class='bx bx-envelope-open'></i>
+                                                                                            <span class="links_name">Keywords</span>
+                                                                                        </a> 
+                                                                                        <span class="tooltip">Dashboard</span>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <a href="#" >
+                                                                                                        <i class='bx bx-envelope-open'></i>
+                                                                                                        <span class="links_name">Messages</span>
+                                                                                                    </a>
+                                                                                                    <span class="tooltip">Dashboard</span>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#" >
+                                                                                                                    <i class='bx bx-merge'></i>
+                                                                                                                    <span class="links_name">Symbols</span>
+                                                                                                                </a> 
+                                                                                                                <span class="tooltip">Dashboard</span>
+                                                                                                                        </li>
+                                                                                                                        <li>
+                                                                                                                            <a href="#" >
+                                                                                                                                <i class='bx bx-merge'></i>
+                                                                                                                                <span class="links_name">Bids</span>
+                                                                                                                            </a>
+                                                                                                                            <span class="tooltip">Dashboard</span>
+                                                                                                                                    </li>
+                                                                                                                                    <li>
+                                                                                                                                        <a href="#" >
+                                                                                                                                            <i class='bx bx-merge'></i>
+                                                                                                                                            <span class="links_name">Accounting</span>
+                                                                                                                                        </a> 
+                                                                                                                                        <span class="tooltip">Dashboard</span>
+                                                                                                                                                </li>
+                                                                                                                                                <li>
+                                                                                                                                                    <a href="#" >
+                                                                                                                                                        <i class='bx bx-merge'></i>
+                                                                                                                                                        <span class="links_name">Logout</span>
+                                                                                                                                                    </a>
+                                                                                                                                                    <span class="tooltip">Dashboard</span>
+                                                                                                                                                            </li>
+                                                                                                                                                            <li>
+                                                                                                                                                                <a href="#" >
+                                                                                                                                                                    <i class='bx bx-merge'></i>
+                                                                                                                                                                    <span class="links_name">Report</span>
+                                                                                                                                                                </a> 
+                                                                                                                                                                <span class="tooltip">Dashboard</span>
+                                                                                                                                                                        </li>
+                                                        </ul>
+                                                    </div>
+                                            </ul>
+                                        </div>
+                                </ul>
+                            </div>
+                    </ul>
+                </div>
+        </ul>
+    </div> 
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

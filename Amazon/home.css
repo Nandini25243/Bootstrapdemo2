@@ -1,0 +1,44 @@
+.top-nav{
+    background-color: rgb(11, 11, 97);
+}
+img:hover{
+    border: 3px solid rgb(12, 5, 5); 
+    overflow: hidden;
+}
+
+
+
+
+
+.down-nav{
+    background-color: rgb(4, 4, 61);
+    padding: 30px;
+    height: 50%;
+     width:100%;
+} 
+ul{
+    color: cornsilk;
+    
+} 
+
+ li { 
+    color: cornsilk;
+    display: inline ;
+    padding:10px;
+}  
+ul li ul.dropdown{
+    background-color: chocolate;
+}
+    
+ul li:hover{
+    border: 1px solid white; 
+    overflow: hidden;
+} 
+
+ul li:hover ul.dropdown{
+    display: block;
+} 
+
+ul li ul.dropdown li{
+    display: block;
+}
